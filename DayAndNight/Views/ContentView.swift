@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Rectangle()
+            
             LinearGradient(
                 gradient: Gradient(
                     colors: [
@@ -62,7 +62,7 @@ struct ContentView: View {
                     .opacity(isDay ? 1 : 0)
                     .animation(.easeInOut(duration: 2.5), value: isDay)
             }
-            
+
             VStack {
                 Spacer()
                 Mountains(
@@ -87,8 +87,8 @@ struct ContentView: View {
                     : dataStore.night.nearMountainsColorBottom
                 )
                 .frame(height: 250)
-                .scaleEffect(x: -1, y: 1, anchor: .bottom)
             }
+            .scaleEffect(x: -1, y: 1, anchor: .bottom)
             
             VStack {
                 Spacer()
@@ -107,14 +107,7 @@ struct ContentView: View {
                 Spacer()
                 HStack {
                     Spacer()
-                    Button(action: buttonAction) {
-                        Image(systemName: isDay ? "moon.fill" : "sun.max.fill")
-                            .rotationEffect(.degrees(isDay ? 0 : 360))
-                    }
-                    .frame(width: 50, height: 50)
-                    .background(.white)
-                    .clipShape(Circle())
-                    .opacity(0.7)
+                    ButtonView(isDay: isDay, action: buttonAction)
                     .padding(40)
                 }
             }

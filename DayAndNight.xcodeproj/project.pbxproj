@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6412BCEF2BEBC76C006CA3AA /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6412BCEE2BEBC76C006CA3AA /* ButtonView.swift */; };
 		64A02F4F2BEA975E0087E53D /* DayAndNightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A02F4E2BEA975E0087E53D /* DayAndNightApp.swift */; };
 		64A02F512BEA975E0087E53D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A02F502BEA975E0087E53D /* ContentView.swift */; };
 		64A02F532BEA975F0087E53D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A02F522BEA975F0087E53D /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6412BCEE2BEBC76C006CA3AA /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		64A02F4B2BEA975E0087E53D /* DayAndNight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayAndNight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A02F4E2BEA975E0087E53D /* DayAndNightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayAndNightApp.swift; sourceTree = "<group>"; };
 		64A02F502BEA975E0087E53D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +52,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6412BCED2BEBC6BC006CA3AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64A02F502BEA975E0087E53D /* ContentView.swift */,
+				64A02F662BEAFDD80087E53D /* StarsView.swift */,
+				64A02F642BEAF5360087E53D /* Star.swift */,
+				64A02F622BEAEC5F0087E53D /* Sun.swift */,
+				64A02F602BEAC3B70087E53D /* Moon.swift */,
+				64B6E0F72BEB5EF100D7239B /* Cloud.swift */,
+				64A02F5C2BEA98410087E53D /* Mountains.swift */,
+				64A02F5E2BEAB25D0087E53D /* Lake.swift */,
+				6412BCEE2BEBC76C006CA3AA /* ButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		64A02F422BEA975E0087E53D = {
 			isa = PBXGroup;
 			children = (
@@ -70,13 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				64A02F4E2BEA975E0087E53D /* DayAndNightApp.swift */,
-				64A02F502BEA975E0087E53D /* ContentView.swift */,
-				64A02F682BEB03260087E53D /* StarsView */,
-				64A02F622BEAEC5F0087E53D /* Sun.swift */,
-				64A02F602BEAC3B70087E53D /* Moon.swift */,
-				64B6E0F72BEB5EF100D7239B /* Cloud.swift */,
-				64A02F5C2BEA98410087E53D /* Mountains.swift */,
-				64A02F5E2BEAB25D0087E53D /* Lake.swift */,
+				6412BCED2BEBC6BC006CA3AA /* Views */,
 				64B6E0F12BEB05F100D7239B /* Models */,
 				64B6E0F42BEB085800D7239B /* Services */,
 				64A02F522BEA975F0087E53D /* Assets.xcassets */,
@@ -91,15 +103,6 @@
 				64A02F552BEA975F0087E53D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		64A02F682BEB03260087E53D /* StarsView */ = {
-			isa = PBXGroup;
-			children = (
-				64A02F662BEAFDD80087E53D /* StarsView.swift */,
-				64A02F642BEAF5360087E53D /* Star.swift */,
-			);
-			path = StarsView;
 			sourceTree = "<group>";
 		};
 		64B6E0F12BEB05F100D7239B /* Models */ = {
@@ -190,6 +193,7 @@
 			files = (
 				64B6E0F32BEB062600D7239B /* TimeOfDay.swift in Sources */,
 				64A02F612BEAC3B70087E53D /* Moon.swift in Sources */,
+				6412BCEF2BEBC76C006CA3AA /* ButtonView.swift in Sources */,
 				64B6E0F82BEB5EF100D7239B /* Cloud.swift in Sources */,
 				64A02F5D2BEA98410087E53D /* Mountains.swift in Sources */,
 				64B6E0F62BEB086700D7239B /* DataStore.swift in Sources */,
